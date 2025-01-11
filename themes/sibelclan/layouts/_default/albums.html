@@ -1,8 +1,16 @@
 {{ define "main" }}
 <section id="sect-body">
   <div class="container">
-    <h1>Albums</h1>
-    <article>{{ .Content }}</article>
+    <h1>Escucha nuestros <em>discos</em></h1>
+    <h3>Solo haz click y siente el flow</h3>
+    <div class="row">
+      {{ range .Pages }}
+      <div class="col-lg-6">
+        {{- partial "albums/coverart.html" . -}}
+      </div>
+      {{ end }}
+    </div>
+    {{- template "_internal/pagination.html" . -}}
   </div>
 </section>
 {{ end }}

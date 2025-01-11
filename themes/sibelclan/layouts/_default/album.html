@@ -1,8 +1,56 @@
 {{ define "main" }}
-<section id="sect-body">
+<section id="sect-hero">
   <div class="container">
-    <h1>Album</h1>
-    <article>{{ .Content }}</article>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{{ .Params.cover_art }}" alt="{{ .Title }}" class="img-fluid" />
+      </div>
+      <div class="col-sm-6">
+        <h1>{{ .Title }}</h1>
+        <h2>Album de estudio / Publicado el {{ dateFormat "2 January 2006" .Date }}</h2>
+        <p>{{ .Params.headline }}</p>
+        <p>
+          <a href="{{ .Params.purchase_url }}" class="button button-center">Comprar / Escuchar</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-gallery">
+  <div class="container">
+    <div class="row">
+      {{ range .Params.images }}
+      <div class="col-12">
+        <img src="{{ . }}" class="img-fluid" />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section id="sect-stream">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <iframe style="border-radius:12px" src="{{ .Params.streaming_urls.spotify }}" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+      </div>
+      <div class="col-lg-6">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ .Params.streaming_urls.apple_music }}"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-about">
+  <div class="container">
+    <h1>Acerca de "{{ .Title }}"</h1>
+    <div class="row">
+      <div class="col-12">
+        <article>{{ .Content }}</article>
+      </div>
+    </div>
   </div>
 </section>
 {{ end }}
