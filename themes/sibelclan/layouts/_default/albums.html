@@ -4,7 +4,7 @@
     <h1>Escucha nuestros <em>discos</em></h1>
     <h3>Solo haz click y siente el flow</h3>
     <div class="row">
-      {{ range .Pages }}
+      {{ range .Pages.ByDate.Reverse }}
       <div class="col-lg-6">
         {{- partial "albums/coverart.html" . -}}
       </div>
