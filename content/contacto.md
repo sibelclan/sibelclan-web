@@ -1,6 +1,6 @@
 ---
-title: "Formación y coaching para desarrolladores"
-description: "¿Tienes alguna duda? ¡Escríbenos y te responderemos lo antes posible!"
-date: 2020-09-19T16:14:05+02:00
+title: "Contacta con nosotros"
+description: ""
+date: 2025-01-11T00:00:00+01:00
 layout: contact
 ---
