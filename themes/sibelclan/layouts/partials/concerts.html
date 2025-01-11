@@ -1,0 +1,17 @@
+<section id="sect-concerts">
+  <div class="container">
+    <h1>Próximos conciertos</h1>
+    <table class="table">
+      <tbody>
+        {{ range .Site.Data.concerts }}
+        <tr>
+          <th scope="row">{{ dateFormat "2 January 2006" .date }}</th>
+          <td>{{ .venue }}</td>
+          <td>{{ .city }}</td>
+          <td><a href="{{ .tickets_url }}">Comprar Entradas</a></td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</section>
