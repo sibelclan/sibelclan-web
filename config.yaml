@@ -9,3 +9,7 @@ languages:
   en:
     weight: 2
 metaDataFormat: yaml
+params:
+  external_links:
+    store_music_url: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley
+    store_merchan_url: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley

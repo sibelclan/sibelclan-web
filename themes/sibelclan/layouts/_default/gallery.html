@@ -1,9 +1,15 @@
 {{ define "main" }}
 {{- partial "hero.html" . -}}
 
-<section id="sect-body">
+<section id="sect-gallery">
   <div class="container">
-    <article>{{ .Content }}</article>
+    <div class="row">
+      {{ range .Params.images }}
+      <div class="col-12">
+        <img src="{{ . }}" class="img-fluid" />
+      </div>
+      {{ end }}
+    </div>
   </div>
 </section>
 
