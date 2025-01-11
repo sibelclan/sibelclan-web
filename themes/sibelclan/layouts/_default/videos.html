@@ -3,9 +3,20 @@
 
 <section id="sect-body">
   <div class="container">
-    <h1>Videos</h1>
-    <article>{{ .Content }}</article>
+    <h1>Mira nuestros videoclips y conciertos</h1>
   </div>
+
+  <div class="container">
+    <div class="row">
+      {{ range .Params.videoclips }}
+      <div class="col-lg-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ . }}" title="" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
+      </div>
+      {{ end }}  
+    </div>
+  </div>
+
+  
 </section>
 
 {{- partial "social.html" . -}}
