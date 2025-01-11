@@ -1,0 +1,11 @@
+title: Sibelclan
+theme: sibelclan
+baseURL: https://www.sibelclan.com
+languageCode: es-es
+defaultContentLanguage: es
+languages:
+  es:
+    weight: 1
+  en:
+    weight: 2
+metaDataFormat: yaml
