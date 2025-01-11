@@ -1,7 +1,6 @@
 ---
-title: "Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses"
-description: "Caso de éxito de BAB: Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses"
-date: 2022-02-09T06:00:00+02:00
+title: "Half Marathon"
+description: ""
+date: 2025-01-11T00:00:00+01:00
 layout: album
-featured_image: "/assets/img/blog/blog-cover-1.png"
 ---
