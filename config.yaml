@@ -1,6 +1,7 @@
 title: Sibelclan
 theme: sibelclan
-baseURL: https://www.sibelclan.com
+#baseURL: https://www.sibelclan.com
+baseURL: https://sibelclan.github.io
 languageCode: es-es
 defaultContentLanguage: es
 languages:
