@@ -3,6 +3,7 @@ title: "Sobre nosotros"
 description: ""
 date: 2025-01-11T00:00:00+01:00
 layout: aboutus
+featured_image: '/assets/img/band/2023-run-to-me.jpg'
 ---
 
 Sibelclan es una banda granadina de rock alternativo con influencias Stoner y Grunge formada por Juan Luis Manosalbas (voz), Jorge Boke (batería), Pedro Pardal (guitarra) e Isra Jiménez (bajo). Nace en 2013 tras unirse Gerardo Hernández y Juan Luis Manosalbas en un proyecto común del que surgieron canciones originales de gran calidad y con un sello distinto de lo visto en el panorama hasta la fecha. El resto de la formación se va completando tras entradas y salidas varias hasta confluir en el elenco actual.
