@@ -39,6 +39,10 @@ section {
   padding-bottom: 3em;
 }
 
+.super-big {
+  font-size: 5em;
+}
+
 h1 {
   font-size: 1.875em;
   line-height: 1.25em;
@@ -261,4 +265,88 @@ video {
   position: relative;
   color: white;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+//
+// BUTTONS
+//
+
+.button {
+	display: block;
+	border-style: solid;
+	border-color: $secondary-color;
+	background-color: $secondary-color;
+	border-width: 3px;
+	font-family: $h1-font, sans-serif;
+	text-decoration: none;
+	width: fit-content;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	justify-content: center;
+  align-items: center;
+}
+
+.button.expand {
+	width: 100%;
+}
+
+.button.button-center {
+	margin: auto;
+}
+
+.button-hollow.button-center {
+	margin: auto;
+}
+
+.dark .button {
+	color: $dark-background-color;
+}
+
+.light .button {
+	color: white;
+}
+
+.gloaming .button {
+	color: white;
+}
+
+.button:after {
+	float: right;
+	margin-left: .75em;
+	margin-top: 4px;
+}
+
+.button-hollow {
+	display: block;
+	border-style: solid;
+	border-color: $secondary-color;
+	border-width: 3px;
+	font-family: $h1-font, sans-serif;
+	text-decoration: none;
+	width: fit-content;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	justify-content: center;
+  align-items: center;
+	color: $secondary-color;
+}
+
+.button.button-green {
+	background-color: $primary-color !important;
+	border-style: none;
+	color: $dark-background-color;
+	text-align: center;
+}
+
+.button.button-dark {
+	background-color: $dark-background-color !important;
+	border-style: none;
+	color: $gloaming-background-color;
+	text-align: center;
 }
