@@ -3,7 +3,7 @@ jobs:
   build:
     branches:
       only:
-        - master
+        - main
     docker:
       - image: cibuilds/hugo:latest
     working_directory: ~/repo
@@ -41,4 +41,4 @@ jobs:
             git add .
             git commit --allow-empty -m "Trigger deployment new Release"
             # Push quietly to prevent showing the token in log
-            git push -q https://${GITHUB_TOKEN}@github.com/sibelclan/sibelclan.github.io.git master
+            git push -q https://${GITHUB_TOKEN}@github.com/sibelclan/sibelclan.github.io.git main
