@@ -230,3 +230,35 @@ span.underline {
 .bg-mask {
   background: rgba(24, 41, 53, 0.5);
 }
+
+//
+// VIDEO
+//
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-header {
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}

@@ -3,13 +3,15 @@
 {{ end }}
 
 {{ define "main" }}
-<header
-  class="hero hero-bg-img"
-  style="background-image: url('{{ .Params.featured_image }}')"
->
-  <div class="hero-bg-img-mask bg-mask">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
+<header class="video-header">
+  <div class="video-wrappper">
+    <video playsinline autoplay muted loop poster="/assets/img/band/2023-run-to-me.jpg">
+      <source src="/assets/video/sibelclan-visualizer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-12 text-center">
           <h1>Sibelclan</h1>
           <h2>Sitio web oficial</h2>
@@ -19,18 +21,20 @@
   </div>
 </header>
 
-<header
-  class="hero hero-bg-img"
-  style="background-image: url('{{ .Params.featured_image }}')"
->
-  <div class="hero-bg-img-mask bg-mask">
+<header class="video-header">
+  <div class="video-wrappper">
+    <video playsinline autoplay muted loop poster="/assets/img/band/2023-run-to-me.jpg">
+      <source src="/assets/video/thecrowd-visualizer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
           <h1>The Crowd</h1>
           <h2>Nuevo single + Videoclip ya disponible</h2>
           <p>
-            <a data-scroll="sect-contact" href="#" class="button button-center">Ver videoclip</a>
+            <a href="#" class="button button-center">Ver videoclip</a>
           </p>
         </div>
       </div>
