@@ -31,7 +31,7 @@ jobs:
           working_directory: ~/repo
           command: |
             cp -a public/. ~/workdir/sibelclan.github.io
-      - deploy:
+      - run:
           name: Trigger docs deployment
           working_directory: ~/workdir/sibelclan.github.io
           command: |
