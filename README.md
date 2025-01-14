@@ -1,6 +1,6 @@
 # Sibelclan Website
 
-[![CircleCI](https://circleci.com/gh/sibelclan-es/web-sibelclan/tree/master.svg?style=svg)](https://circleci.com/gh/sibelclan-es/web-sibelclan/tree/master)
+[![CircleCI](https://circleci.com/gh/sibelclan/sibelclan-web/tree/main.svg?style=svg)](https://circleci.com/gh/sibelclan/sibelclan-web/tree/main)
 
 ## :pick: Requirements
 
