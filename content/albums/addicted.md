@@ -5,6 +5,7 @@ date: 2024-12-06T00:00:00+01:00
 layout: album
 cover_art: '/assets/img/coverart/addicted.jpg'
 images: ['/assets/img/band/2024-upside-down-world.jpg']
+purchase_url: https://open.spotify.com/intl-es/album/1hVKPuOSfeg30FiT687eUd?si=DOKblaBnQzGd6fHE27jNrg
 streaming_urls:
   spotify: https://open.spotify.com/embed/album/1hVKPuOSfeg30FiT687eUd?utm_source=generator
   apple_music: https://embed.music.apple.com/es/album/addicted/1776840621
