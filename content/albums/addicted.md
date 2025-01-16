@@ -9,9 +9,12 @@ purchase_url: https://open.spotify.com/intl-es/album/1hVKPuOSfeg30FiT687eUd?si=D
 streaming_urls:
   spotify: https://open.spotify.com/embed/album/1hVKPuOSfeg30FiT687eUd?utm_source=generator
   apple_music: https://embed.music.apple.com/es/album/addicted/1776840621
-headline: "For A Dramatic Turn of Events, Dream Theater underwent a self-proclaimed musical change, reevaluating and restructuring themselves. The album has drawn stylistic comparisons to two of the band’s past albums, Images and Words and Metropolis Pt. 2: Scenes from a Memory."
+headline: "Con un lienzo metalizado como base, rallan en el con un destornillador marca Dalí desde la inicial y stoner “Upside Down World” (crítica social incluida en sus letras) o la Sabbath alternativa de “Luckiest Man On Earth”, hasta el hard rock de sintetizadores siderales o de alternancia plomiza a la Muse de “My Costellation” y “Adictted”, pasando por el gótico ligero de “No Turning Back”, el reflujo Queen tamizado por halos grunge de “The Crowd”, el surf rock sicótico de “Wrong”"
 ---
 
-“We just love to play our instruments,” observes Petrucci. “That never goes away. I love to be creative, write, and exercise that part of my mind. We’ve been able to do this for a long time, and we don’t take it for granted. Whenever we get together, we know we can’t disappoint ourselves or our fans, so we manage to try even harder.”
+> "Con un lienzo metalizado como base, rallan en el con un destornillador marca Dalí desde la inicial y stoner “Upside Down World” (crítica social incluida en sus letras) o la Sabbath alternativa de “Luckiest Man In The World”, hasta el hard rock de sintetizadores siderales o de alternancia plomiza a la Muse de “My Costellation” y “Adictted”, pasando por el gótico ligero de “No Turning Back”, el reflujo Queen tamizado por halos grunge de “The Crowd”, el surf rock sicótico de “Wrong”
+[Leer crítica completa en MetalHammer](https://metalhammer.es/sibelclan-addicted/)
 
-“We approach every album like it’s our first,” adds LaBrie. “It’s been such a great ride, but we’re not going to stop.”
+> "“Addicted” se perfila como una de las grandes sorpresas musicales del año. Con su mezcla de riffs poderosos, letras profundas y una producción cuidada al detalle, el disco está diseñado para cautivar tanto a los amantes del rock clásico como a quienes buscan sonidos nuevos. Sibelclan no solo entrega música; entrega experiencias, emociones y un viaje sonoro que conecta con el público a niveles profundos."
+[Leer crítica completa en El Mundo de Tulsa](https://elmundodetulsa.com/sibelclan-addicted-disco-descargar-resena/)
+

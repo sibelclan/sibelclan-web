@@ -8,9 +8,9 @@ images: ['/assets/img/band/2023-full-marathon.jpg']
 streaming_urls:
   spotify: https://open.spotify.com/embed/album/62UgeXYVeqVwo8bTGejTe2?utm_source=generator
   apple_music: https://embed.music.apple.com/es/album/full-marathon-ep/1776093988
-headline: "For A Dramatic Turn of Events, Dream Theater underwent a self-proclaimed musical change, reevaluating and restructuring themselves. The album has drawn stylistic comparisons to two of the band’s past albums, Images and Words and Metropolis Pt. 2: Scenes from a Memory."
+headline: "Sibelclan no solo es una banda, sino un viaje musical que invita a los oyentes a explorar nuevas facetas del rock alternativo. «Full Marathon» es un testimonio de su evolución y compromiso con la autenticidad artística. Con el respaldo del público y el reconocimiento en concursos como Rock in Rio Tea, el futuro de Sibelclan promete ser tan emocionante como su música."
 ---
 
-“We just love to play our instruments,” observes Petrucci. “That never goes away. I love to be creative, write, and exercise that part of my mind. We’ve been able to do this for a long time, and we don’t take it for granted. Whenever we get together, we know we can’t disappoint ourselves or our fans, so we manage to try even harder.”
+> "Sibelclan no solo es una banda, sino un viaje musical que invita a los oyentes a explorar nuevas facetas del rock alternativo. «Full Marathon» es un testimonio de su evolución y compromiso con la autenticidad artística. Con el respaldo del público y el reconocimiento en concursos como Rock in Rio Tea, el futuro de Sibelclan promete ser tan emocionante como su música. Prepárense para dejarse llevar por la rebeldía sonora de Sibelclan, una banda que está marcando su propia ruta en el panorama musical actual."
 
-“We approach every album like it’s our first,” adds LaBrie. “It’s been such a great ride, but we’re not going to stop.”
+[Leer review completa en El Mundo de Tulsa](https://elmundodetulsa.com/sibelclan-full-marathon-ep-disco-musica/)

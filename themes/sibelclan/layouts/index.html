@@ -56,7 +56,9 @@
         <img src="{{ .Params.cover_art }}" alt="{{ .Title }}" class="img-fluid" />
         <h3>{{ .Title }}</h3>
         <h4>Nuevo album | Disponible el {{ dateFormat "2 January 2006" .Date }}</h4>
-        <p>{{ .Params.headline }}</p>
+        <p class="review">"{{ .Params.headline }}"</p>
+        <p>
+          <a href="https://metalhammer.es/sibelclan-addicted/" target="_blank">Leer review completa en MetalHammer</a>
         <p>
           <a href="{{ .Params.purchase_url }}" class="button button-black button-center">Escuchar</a>
         </p>

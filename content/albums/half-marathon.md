@@ -8,9 +8,11 @@ images: ['/assets/img/band/2015-half-marathon.png']
 streaming_urls:
   spotify: https://open.spotify.com/embed/album/4uih2LxAbpE7Mguv5WCYav?utm_source=generator
   apple_music: https://embed.music.apple.com/es/album/half-marathon/1452846098
-headline: "For A Dramatic Turn of Events, Dream Theater underwent a self-proclaimed musical change, reevaluating and restructuring themselves. The album has drawn stylistic comparisons to two of the band’s past albums, Images and Words and Metropolis Pt. 2: Scenes from a Memory."
+headline: "El disco por encima de cualquier matiz estilístico es un trabajo con diez canciones muy bien compuestas y cuidadas al detalle. Rock en esencia y contundencia más que suficiente para dar un golpe en la mesa y dejar huella."
 ---
 
-“We just love to play our instruments,” observes Petrucci. “That never goes away. I love to be creative, write, and exercise that part of my mind. We’ve been able to do this for a long time, and we don’t take it for granted. Whenever we get together, we know we can’t disappoint ourselves or our fans, so we manage to try even harder.”
+> "Lo estábamos esperando. En sus directos se presagiaba algo gordo y es que éste cuarteto granadino han hilado muy fino y han presentado un primer álbum de debut realmente intemporal a juzgar por la escucha de estos diez temazos de que consta su ópera prima, grabada además en estudio pero en directo, es decir, sin el proceder clásico de pista por pista y asaltando cada canción en grupo como si de una actuación ese tratara."
 
-“We approach every album like it’s our first,” adds LaBrie. “It’s been such a great ride, but we’re not going to stop.”
+> "El disco por encima de cualquier matiz estilístico es un trabajo con diez canciones muy bien compuestas y cuidadas al detalle. Rock en esencia y contundencia más que suficiente para dar un golpe en la mesa y dejar huella. Suena internacional, y lleva implícito un papel diverso que hace que quieras deshojar todo el disco de principio a fin. El título y a la portada complementan al propio álbum como un guiño a la sociedad de consumo y a la mediatización que padecemos, en la cual una actividad al azar como pueda ser una media maratón, se tome en algo masivo sin causa aparente."
+
+[Leer la review completa en Universo Sabika](https://www.tumblr.com/universosabika/142786139125/sibelclan-nuevo-disco-half-marathon-11-de)
