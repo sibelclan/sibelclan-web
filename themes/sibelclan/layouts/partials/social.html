@@ -1,12 +1,13 @@
-<section
+<aside
   id="sect-social"
   class="hero hero-bg-img"
+  style="background-image: url('/assets/img/band/sibelclan-concert.jpg')"
 >
   <div class="hero-bg-img-mask bg-mask">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h2>Síguenos en redes</h2>
+          <h2 class="mb-4">Síguenos en redes</h2>
           <ul class="list-inline mt-3 mt-lg-0">
             {{ range .Site.Data.social }}
             <li class="list-inline-item">
@@ -14,7 +15,7 @@
                 target="_blank"
                 href="{{ .url }}"
               >
-                <img src="/assets/img/social/{{ .icon }}.svg" width="50px" target="_blank" />
+                <img class="social-icon" src="/assets/img/social/{{ .icon }}.svg" target="_blank" />
               </a>
             </li>
             {{ end }}
@@ -23,4 +24,4 @@
       </div>
     </div>
   </div>
-</section>
+</aside>

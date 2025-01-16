@@ -350,3 +350,15 @@ footer {
     text-decoration: none;
   }
 }
+
+//
+// SOCIAL
+//
+
+.social-icon {
+  width: 50px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
