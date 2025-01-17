@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{- partial "hero.html" . -}}
+
+<section id="sect-shop">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>¡Muy pronto!</h2>
+        <p>Estamos trabajando en traer la tienda online de Sibelclan, donde podrás comprar nuestros LPs en formato físico, y merchandising del grupo como camisetas, sudaderas etc.</p>
+        <p>Si mientras tanto quieres apoyar al grupo y comprar nuestros discos o merchan, puedes enviarnos un mensaje en el formulario de contacto con lo que quieras y nos pondremos en contacto contigo para hacértelo llegar directamente.</p>
+        <p>¡Muchísimas gracias por apoyar a la banda, sin tu ayuda este proyecto no sería posible!</p>
+        <p>Un abrazo,</p>
+        <p>Juan Luis, Jorge, Isra y Pedro.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sect-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Déjanos tu petición en este formulario de contacto.</h2>
+				{{- partial "contactform.html" . -}}
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ end }}
