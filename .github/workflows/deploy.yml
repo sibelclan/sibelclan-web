@@ -2,7 +2,8 @@ name: Build and deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -40,4 +41,4 @@ jobs:
       - name: Trigger Coolify deploy
         run: |
           curl -X GET "${{ secrets.COOLIFY_WEBHOOK }}" \
-            -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}"
+            -H "Authorization: Bearer ${{ secrets.COOLIFY_API_TOKEN }}"
