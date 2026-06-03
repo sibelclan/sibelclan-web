@@ -154,19 +154,19 @@
     <p class="artist">Sibelclan</p>
 
     <nav class="links" aria-label="Plataformas de escucha">
-      <a class="button" href="{{ .Params.streaming_urls.spotify }}" target="_blank" rel="noopener">
+      <a class="button" href="{{ .Params.streaming_urls.spotify }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
         Escuchar en Spotify
       </a>
 
-      <a class="button" href="{{ .Params.streaming_urls.apple_music }}" target="_blank" rel="noopener">
+      <a class="button" href="{{ .Params.streaming_urls.apple_music }}" target="_blank" rel="noopener" onclick="trackStreamingClick('AppleMusic', this.href)">
         Escuchar en Apple Music
       </a>
 
-      <a class="button" href="{{ .Params.streaming_urls.youtube }}" target="_blank" rel="noopener">
+      <a class="button" href="{{ .Params.streaming_urls.youtube }}" target="_blank" rel="noopener" onclick="trackStreamingClick('YouTube', this.href)">
         Ver en YouTube
       </a>
 
-      <a class="button" href="{{ .Params.streaming_urls.tidal }}" target="_blank" rel="noopener">
+      <a class="button" href="{{ .Params.streaming_urls.tidal }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Tidal', this.href)">
         Escuchar en TIDAL
       </a>
     </nav>
@@ -175,5 +175,16 @@
       Rock alternativo desde Granada.
     </footer>
   </main>
+
+  <script>
+    function trackStreamingClick(platform, url) {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom', platform + 'Click', {
+          platform: platform,
+          destination_url: url
+        });
+      }
+    }
+  </script>
 </body>
 </html>
