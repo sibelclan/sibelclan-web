@@ -330,6 +330,26 @@ video {
   color: #ffffff;
 }
 
+.button.button-spotify {
+  border-color: #1DB954;
+  background-color: #1DB954;
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.button.button-spotify img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.button.button-spotify:hover {
+  border-color: #1ed760;
+  background-color: #1ed760;
+  color: #000000;
+}
+
 a:hover {
   text-decoration: none;
 }

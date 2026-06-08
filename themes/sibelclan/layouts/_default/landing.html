@@ -61,13 +61,29 @@
       text-align: center;
     }
 
+    .cover-wrapper {
+      position: relative;
+      display: block;
+      margin-bottom: 24px;
+    }
+
     .cover {
       width: 100%;
       border-radius: 20px;
       border: 1px solid var(--border);
       box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
       display: block;
-      margin-bottom: 24px;
+    }
+
+    .cover-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      pointer-events: none;
     }
 
     .eyebrow {
@@ -116,6 +132,12 @@
       opacity: 0.86;
     }
 
+    .button-spotify {
+      background: #1DB954;
+      color: #000000;
+      gap: 12px;
+    }
+
     footer {
       margin-top: 28px;
       color: var(--muted);
@@ -126,7 +148,7 @@
 
 <body>
   <main>
-    <a href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+    <a class="cover-wrapper" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
       <img
         class="cover"
         src="{{ .Params.cover_art }}"
@@ -134,6 +156,7 @@
         height="420"
         alt="Carátula de {{ .Params.song_name }} de Sibelclan"
       />
+      <img class="cover-overlay" src="/assets/img/icons/play-button-overlay.webp" alt="" aria-hidden="true" />
     </a>
 
     <p class="eyebrow">Nuevo single</p>
@@ -141,7 +164,8 @@
     <p class="artist">Sibelclan</p>
 
     <nav class="links" aria-label="Plataformas de escucha">
-      <a class="button" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+      <a class="button button-spotify" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+        <img src="/assets/img/icons/spotify-icon.webp" alt="" aria-hidden="true" width="22" height="22">
         Escuchar en Spotify
       </a>
 
@@ -163,10 +187,6 @@
         </a>
       {{ end }}
     </nav>
-
-    <footer>
-      Rock alternativo desde Granada.
-    </footer>
   </main>
 
   <script>
