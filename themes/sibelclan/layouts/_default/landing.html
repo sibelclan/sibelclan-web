@@ -125,14 +125,16 @@
 
 <body>
   <main>
-    <img
-      class="cover"
-      src="{{ .Params.cover_art }}"
-      alt="Carátula de Upside Down World de Sibelclan"
-    />
+    <a href="{{ .Params.streaming_urls.spotify }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+      <img
+        class="cover"
+        src="{{ .Params.cover_art }}"
+        alt="Carátula de {{ .Params.song_name }} de Sibelclan"
+      />
+    </a>
 
     <p class="eyebrow">Nuevo single</p>
-    <h1>Upside Down World</h1>
+    <h1>{{ .Params.song_name }}</h1>
     <p class="artist">Sibelclan</p>
 
     <nav class="links" aria-label="Plataformas de escucha">
@@ -140,17 +142,23 @@
         Escuchar en Spotify
       </a>
 
-      <a class="button" href="{{ .Params.streaming_urls.apple_music }}" target="_blank" rel="noopener" onclick="trackStreamingClick('AppleMusic', this.href)">
-        Escuchar en Apple Music
-      </a>
+      {{ if .Params.streaming_urls.apple_music }}
+        <a class="button" href="{{ .Params.streaming_urls.apple_music }}" target="_blank" rel="noopener" onclick="trackStreamingClick('AppleMusic', this.href)">
+          Escuchar en Apple Music
+        </a>
+      {{ end }}
 
-      <a class="button" href="{{ .Params.streaming_urls.youtube }}" target="_blank" rel="noopener" onclick="trackStreamingClick('YouTube', this.href)">
-        Ver en YouTube
-      </a>
+      {{ if .Params.streaming_urls.youtube }}
+        <a class="button" href="{{ .Params.streaming_urls.youtube }}" target="_blank" rel="noopener" onclick="trackStreamingClick('YouTube', this.href)">
+          Ver en YouTube
+        </a>
+      {{ end }}
 
-      <a class="button" href="{{ .Params.streaming_urls.tidal }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Tidal', this.href)">
-        Escuchar en TIDAL
-      </a>
+      {{ if .Params.streaming_urls.tidal }}
+        <a class="button" href="{{ .Params.streaming_urls.tidal }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Tidal', this.href)">
+          Escuchar en TIDAL
+        </a>
+      {{ end }}
     </nav>
 
     <footer>
