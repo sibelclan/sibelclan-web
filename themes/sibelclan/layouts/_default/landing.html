@@ -154,6 +154,8 @@
         src="{{ .Params.cover_art }}"
         width="420"
         height="420"
+        fetchpriority="high"
+        loading="eager"
         alt="Carátula de {{ .Params.song_name }} de Sibelclan"
       />
       <img class="cover-overlay" src="/assets/img/icons/play-button-overlay.webp" alt="" aria-hidden="true" />
