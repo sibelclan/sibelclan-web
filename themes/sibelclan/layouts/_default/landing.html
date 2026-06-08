@@ -126,7 +126,7 @@
 
 <body>
   <main>
-    <a href="{{ .Params.streaming_urls.spotify }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+    <a href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
       <img
         class="cover"
         src="{{ .Params.cover_art }}"
@@ -139,7 +139,7 @@
     <p class="artist">Sibelclan</p>
 
     <nav class="links" aria-label="Plataformas de escucha">
-      <a class="button" href="{{ .Params.streaming_urls.spotify }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+      <a class="button" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
         Escuchar en Spotify
       </a>
 
