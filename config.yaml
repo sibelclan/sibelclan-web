@@ -11,7 +11,6 @@ languages:
 metaDataFormat: yaml
 params:
   external_links:
-    store_music_url: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley
-    store_merchan_url: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley
+    store_url: https://sibelclan.myshopify.com/
   gtm_id: G-PP388KZEYV
   meta_pixel_id: 1975836839720717
