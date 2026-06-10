@@ -6,5 +6,5 @@ layout: landing
 cover_art: '/assets/img/coverart/the-crowd-min.png'
 song_name: 'The Crowd'
 streaming_urls:
-  spotify: https://lnk.exeal.es/the-crowd
+  spotify: https://open.spotify.com/track/47lCgT8SlZv8NXqDY56M4L
 ---

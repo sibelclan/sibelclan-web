@@ -148,7 +148,7 @@
 
 <body>
   <main>
-    <a class="cover-wrapper" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+    <a class="cover-wrapper" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="return openSpotifyAndTrack(event, this)">
       <img
         class="cover"
         src="{{ .Params.cover_art }}"
@@ -166,28 +166,10 @@
     <p class="artist">Sibelclan</p>
 
     <nav class="links" aria-label="Plataformas de escucha">
-      <a class="button button-spotify" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="trackStreamingClick('Spotify', this.href)">
+      <a class="button button-spotify" href="{{ .Params.streaming_urls.spotify }}" target="_self" rel="noopener" onclick="return openSpotifyAndTrack(event, this)">
         <img src="/assets/img/icons/spotify-icon.webp" alt="" aria-hidden="true" width="22" height="22">
         Escuchar en Spotify
       </a>
-
-      {{ if .Params.streaming_urls.apple_music }}
-        <a class="button" href="{{ .Params.streaming_urls.apple_music }}" target="_blank" rel="noopener" onclick="trackStreamingClick('AppleMusic', this.href)">
-          Escuchar en Apple Music
-        </a>
-      {{ end }}
-
-      {{ if .Params.streaming_urls.youtube }}
-        <a class="button" href="{{ .Params.streaming_urls.youtube }}" target="_blank" rel="noopener" onclick="trackStreamingClick('YouTube', this.href)">
-          Ver en YouTube
-        </a>
-      {{ end }}
-
-      {{ if .Params.streaming_urls.tidal }}
-        <a class="button" href="{{ .Params.streaming_urls.tidal }}" target="_blank" rel="noopener" onclick="trackStreamingClick('Tidal', this.href)">
-          Escuchar en TIDAL
-        </a>
-      {{ end }}
     </nav>
   </main>
 
@@ -199,6 +181,37 @@
           destination_url: url
         });
       }
+    }
+
+    function openSpotifyAndTrack(event, el) {
+      const webUrl = el.href;
+
+      trackStreamingClick('Spotify', webUrl);
+
+      const isInAppBrowser = /FBMD|FBAV|FBAN|Instagram|musical_ly/i.test(navigator.userAgent);
+      const isIOSWithoutSafari =
+        /iPhone|iPod|iPad/i.test(navigator.userAgent) &&
+        !/Safari/i.test(navigator.userAgent);
+
+      const shouldTryApp = isInAppBrowser || isIOSWithoutSafari;
+
+      if (!shouldTryApp || !webUrl.includes('open.spotify.com')) {
+        return true;
+      }
+
+      event.preventDefault();
+
+      const appUrl = webUrl.replace('https://open.spotify.com/', 'spotify://');
+
+      window.location.href = appUrl;
+
+      setTimeout(function () {
+        if (!document.hidden) {
+          window.location.href = webUrl;
+        }
+      }, 2000);
+
+      return false;
     }
   </script>
 </body>
