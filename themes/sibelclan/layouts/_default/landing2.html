@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect width='1' height='1' fill='%239575cd'/%3E%3C/svg%3E">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-    <meta property="og:image" content="https://img.submithub.com/eyJidWNrZXQiOiJzdWJtaXRodWIiLCJrZXkiOiJpbWFnZXMvb3JpZ2luYWwvZFphQzdYOTR1R0g0U1dhSG0vc2luLXRpdHVsby0xMDgwLXgtMTA4MC1weC1zY2NjaDB4LnBuZyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoiODAwIiwiaGVpZ2h0IjoiODAwIiwiZml0IjoiaW5zaWRlIn19fQ==">
+    <meta property="og:image" content="{{ .Params.cover_art }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sibelclan - Run to Me">
     <meta property="og:description" content="">
@@ -47,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(https://img.submithub.com/eyJidWNrZXQiOiJzdWJtaXRodWIiLCJrZXkiOiJpbWFnZXMvb3JpZ2luYWwvZFphQzdYOTR1R0g0U1dhSG0vc2luLXRpdHVsby0xMDgwLXgtMTA4MC1weC1zY2NjaDB4LnBuZyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoiODAwIiwiaGVpZ2h0IjoiODAwIiwiZml0IjoiaW5zaWRlIn19fQ==) 50% no-repeat;
+            background: url({{ .Params.cover_art }}) 50% no-repeat;
             background-size: cover;
             overflow: hidden
         }
@@ -80,7 +80,7 @@
             width: 250px;
             height: 250px;
             border-radius: 14px;
-            background: url(https://img.submithub.com/eyJidWNrZXQiOiJzdWJtaXRodWIiLCJrZXkiOiJpbWFnZXMvb3JpZ2luYWwvZFphQzdYOTR1R0g0U1dhSG0vc2luLXRpdHVsby0xMDgwLXgtMTA4MC1weC1zY2NjaDB4LnBuZyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoiODAwIiwiaGVpZ2h0IjoiODAwIiwiZml0IjoiaW5zaWRlIn19fQ==) 50% no-repeat;
+            background: url({{ .Params.cover_art }}) 50% no-repeat;
             background-size: cover;
             box-shadow: 0 10px 30px rgba(0,0,0,0.45);
             margin: 0 auto
