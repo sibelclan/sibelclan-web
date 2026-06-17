@@ -286,9 +286,7 @@
     <div id="bg"></div>
     <main>
         <div id="top">
-            
-                            <a href="https://open.spotify.com/track/{{ .Params.streaming_track_ids.spotify }}?si" target="_self" id="a" aria-label="Artwork" onclick="c(event)" data-s="spotify:track:{{ .Params.streaming_track_ids.spotify }}" data-a="intent://open.spotify.com/track/{{ .Params.streaming_track_ids.spotify }}#Intent;scheme=https;package=com.spotify.music;end"></a>
-                        
+            <a href="https://open.spotify.com/track/{{ .Params.streaming_track_ids.spotify }}?si" target="_self" id="a" aria-label="Artwork" onclick="c(event)" data-s="spotify:track:{{ .Params.streaming_track_ids.spotify }}" data-a="intent://open.spotify.com/track/{{ .Params.streaming_track_ids.spotify }}#Intent;scheme=https;package=com.spotify.music;end"></a>
             <div id="t">Sibelclan - {{ .Params.song_name }}</div>
             <div></div>
         </div>
