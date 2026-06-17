@@ -3,14 +3,13 @@
 <head>
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect width='1' height='1' fill='%239575cd'/%3E%3C/svg%3E">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
     <meta property="og:image" content="{{ .Params.cover_art }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sibelclan - Run to Me">
+    <meta property="og:title" content="Sibelclan - {{ .Params.song_name }}">
     <meta property="og:description" content="">
     <meta name="description" content="">
-    <title>Sibelclan - Run to Me</title>
+    <title>Sibelclan - {{ .Params.song_name }}</title>
     <style>
         html {
             height: 100%;
@@ -290,7 +289,7 @@
             
                             <a href="https://open.spotify.com/track/3t7l4FvfOao7aAZpH6X8Ez?si" target="_self" id="a" aria-label="Artwork" onclick="c(event)" data-s="spotify:track:3t7l4FvfOao7aAZpH6X8Ez" data-a="intent://open.spotify.com/track/3t7l4FvfOao7aAZpH6X8Ez#Intent;scheme=https;package=com.spotify.music;end"></a>
                         
-            <div id="t">Sibelclan - Run to Me</div>
+            <div id="t">Sibelclan - {{ .Params.song_name }}</div>
             <div></div>
         </div>
         <div id="b" onclick="c(event)">
