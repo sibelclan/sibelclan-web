@@ -8,5 +8,5 @@ song_name: 'Run to Me'
 streaming_track_ids:
   spotify: 3t7l4FvfOao7aAZpH6X8Ez
 content_name: sibelclan-run-to-me
-cta: Escuchar en Spotify
+cta: Listen on Spotify
 ---

@@ -8,5 +8,5 @@ song_name: 'The Crowd'
 streaming_track_ids:
   spotify: 47lCgT8SlZv8NXqDY56M4L
 content_name: sibelclan-the-crowd
-cta: Escuchar en Spotify
+cta: Listen on Spotify
 ---
