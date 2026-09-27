@@ -1,0 +1,231 @@
+{{ define "main" }}
+{{ $s := .Params.single }}
+{{ $streaming := .Params.streaming }}
+{{ $video := .Params.video }}
+{{ $momentum := .Params.momentum }}
+{{ $assets := .Params.press_assets }}
+
+{{ $spotifyArtistUrl := "" }}
+{{ range .Site.Data.social }}{{ if eq .icon "spotify" }}{{ $spotifyArtistUrl = .url }}{{ end }}{{ end }}
+
+{{ $wavUrl := "" }}
+{{ range $assets }}{{ if and .available .href (in .label "WAV") }}{{ $wavUrl = .href }}{{ end }}{{ end }}
+
+<div id="epk-page">
+
+  <!-- HERO -->
+  <header id="sect-epk-hero" class="epk-hero{{ if not $s.cover_art }} epk-hero-noart{{ end }}">
+    {{ if $video.visualizer }}
+    <div class="epk-hero-bg">
+      <video playsinline autoplay muted loop>
+        <source src="{{ $video.visualizer }}" type="video/mp4">
+      </video>
+    </div>
+    {{ end }}
+    <div class="epk-hero-mask">
+      <div class="container">
+        <div class="row align-items-center">
+          {{ if $s.cover_art }}
+          <div class="col-lg-5">
+            <img src="{{ $s.cover_art }}" alt="{{ $s.title }} artwork" class="img-fluid epk-artwork" />
+          </div>
+          {{ end }}
+          <div class="col-lg-{{ if $s.cover_art }}7{{ else }}12{{ end }} text-center text-lg-left">
+            <p class="epk-eyebrow">{{ $s.artist }}</p>
+            <h1 class="epk-title">{{ $s.title }}</h1>
+            <p class="epk-tag">New Single</p>
+            <div class="epk-cta-group">
+              {{ if $streaming.spotify_track_id }}
+              <a class="button button-spotify" href="https://open.spotify.com/track/{{ $streaming.spotify_track_id }}" target="_blank" rel="noopener">
+                <img src="/assets/img/icons/spotify-icon.webp" alt="" aria-hidden="true" /> Listen
+              </a>
+              {{ else if $streaming.presave_url }}
+              <a class="button button-spotify" href="{{ $streaming.presave_url }}" target="_blank" rel="noopener">
+                <img src="/assets/img/icons/spotify-icon.webp" alt="" aria-hidden="true" /> Pre-save
+              </a>
+              {{ else }}
+              <a class="button button-spotify" href="#sect-epk-listen">
+                <img src="/assets/img/icons/spotify-icon.webp" alt="" aria-hidden="true" /> Listen
+              </a>
+              {{ end }}
+              <a class="button" href="{{ if $video.youtube_id }}https://www.youtube.com/watch?v={{ $video.youtube_id }}{{ else }}#sect-epk-video{{ end }}" target="_blank" rel="noopener">Watch official video</a>
+              <a class="button" href="#sect-epk-press">Download press kit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS -->
+  <section id="sect-epk-facts">
+    <div class="container">
+      <dl class="epk-facts">
+        <div class="epk-fact"><dt>Artist</dt><dd>{{ $s.artist }}</dd></div>
+        <div class="epk-fact"><dt>Single</dt><dd>{{ $s.title }}</dd></div>
+        <div class="epk-fact"><dt>Genre</dt><dd>{{ delimit $s.genres " / " }}</dd></div>
+        <div class="epk-fact"><dt>Length</dt><dd>{{ $s.duration }}</dd></div>
+        <div class="epk-fact"><dt>Producer</dt><dd>{{ $s.producer }}</dd></div>
+        <div class="epk-fact"><dt>Location</dt><dd>{{ $s.location }}</dd></div>
+        {{ if $s.release_date }}
+        <div class="epk-fact"><dt>Release date</dt><dd>{{ $s.release_date }}</dd></div>
+        {{ end }}
+      </dl>
+    </div>
+  </section>
+
+  <!-- LISTEN -->
+  <section id="sect-epk-listen">
+    <div class="container">
+      <h2>Listen</h2>
+      {{ if $streaming.spotify_track_id }}
+      <div class="row">
+        <div class="col-lg-6">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ $streaming.spotify_track_id }}" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      {{ else if $streaming.presave_url }}
+      <p class="epk-pending">Not out yet — <a href="{{ $streaming.presave_url }}" target="_blank" rel="noopener">pre-save "{{ $s.title }}"</a> now.</p>
+      {{ else }}
+      <p class="epk-pending">Streaming link coming soon.{{ if $spotifyArtistUrl }} In the meantime, follow Sibelclan on <a href="{{ $spotifyArtistUrl }}" target="_blank" rel="noopener">Spotify</a>.{{ end }}</p>
+      {{ end }}
+      {{ if $streaming.apple_music_url }}<p><a href="{{ $streaming.apple_music_url }}" target="_blank" rel="noopener">Listen on Apple Music</a></p>{{ end }}
+      {{ if $streaming.youtube_music_url }}<p><a href="{{ $streaming.youtube_music_url }}" target="_blank" rel="noopener">Listen on YouTube Music</a></p>{{ end }}
+      {{ if $wavUrl }}<p><a href="{{ $wavUrl }}" target="_blank" rel="noopener">Download press WAV</a></p>{{ end }}
+    </div>
+  </section>
+
+  <!-- ABOUT THE SIREN SONG -->
+  <section id="sect-epk-about">
+    <div class="container">
+      <h2>About "{{ $s.title }}"</h2>
+      {{ range split .Params.about_sound "\n\n" }}<p>{{ . }}</p>{{ end }}
+      {{ range split .Params.about_story "\n\n" }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  <!-- OFFICIAL VIDEO -->
+  <section id="sect-epk-video">
+    <div class="container">
+      <h2>Official video</h2>
+      {{ if $video.youtube_id }}
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="epk-video-frame">
+            <iframe src="https://www.youtube.com/embed/{{ $video.youtube_id }}" title="{{ $s.title }} - Official video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+        </div>
+      </div>
+      {{ else if $video.visualizer }}
+      <p class="epk-pending">Official music video coming soon. Visualizer below.</p>
+      {{ end }}
+      {{ if $video.visualizer }}
+      <div class="row{{ if $video.youtube_id }} epk-visualizer-row{{ end }}">
+        <div class="col-lg-8">
+          {{ if $video.youtube_id }}<h3 class="epk-visualizer-label">Visualizer</h3>{{ end }}
+          <video class="epk-visualizer" controls playsinline{{ with $s.cover_art }} poster="{{ . }}"{{ end }}>
+            <source src="{{ $video.visualizer }}" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      {{ else if not $video.youtube_id }}
+      <p class="epk-pending">Official music video coming soon.</p>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- STORY / PRODUCTION -->
+  <section id="sect-epk-production">
+    <div class="container">
+      <h2>Production</h2>
+      {{ range split .Params.production_note "\n\n" }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  <!-- CURRENT MOMENTUM -->
+  {{ if $momentum.enabled }}
+  <section id="sect-epk-momentum">
+    <div class="container">
+      <h2>Current momentum</h2>
+      <div class="row epk-stats">
+        <div class="col-4 epk-stat">
+          <span class="epk-stat-value">{{ $momentum.finalists_total }}</span>
+          <span class="epk-stat-label">Finalist bands</span>
+        </div>
+        <div class="col-4 epk-stat">
+          <span class="epk-stat-value">{{ $momentum.votes }}</span>
+          <span class="epk-stat-label">Public votes</span>
+        </div>
+        <div class="col-4 epk-stat">
+          <span class="epk-stat-value">{{ $momentum.lead }}</span>
+          <span class="epk-stat-label">Lead over 2nd place</span>
+        </div>
+      </div>
+      <p>Sibelclan is among the {{ $momentum.finalists_total }} finalist bands at {{ with $momentum.contest_name }}{{ . }}{{ else }}an ongoing public-vote competition{{ end }}, currently leading the audience vote.</p>
+      {{ if $momentum.dates }}
+      <ul class="epk-dates">
+        {{ range $momentum.dates }}
+        <li><strong>{{ .date }}</strong> — {{ .label }}{{ with .venue }}, {{ . }}{{ end }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- ABOUT SIBELCLAN -->
+  <section id="sect-epk-band">
+    <div class="container">
+      <h2>About Sibelclan</h2>
+      {{ range split .Params.band_bio_short "\n\n" }}<p>{{ . }}</p>{{ end }}
+      <p><a href="/sobre-nosotros/">Full band bio →</a></p>
+    </div>
+  </section>
+
+  <!-- PRESS ASSETS -->
+  <section id="sect-epk-press">
+    <div class="container">
+      <h2>Press assets</h2>
+      <ul class="epk-press-list">
+        {{ range $assets }}
+        <li class="epk-press-item">
+          <span class="epk-press-label">{{ .label }}</span>
+          {{ if and .available .href }}
+          <a class="epk-press-link" href="{{ .href }}" target="_blank" rel="noopener">{{ if or (in .href "youtube.com") (in .href "youtu.be") }}Watch{{ else if in .href "drive.google.com" }}Open{{ else }}Download{{ end }}</a>
+          {{ else }}
+          <span class="epk-press-soon">Coming soon</span>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ if .Params.press_kit_zip }}
+      <p><a class="button button-black" href="{{ .Params.press_kit_zip }}">Download press kit</a></p>
+      {{ else }}
+      <p class="epk-pending">Full press kit ZIP coming soon — individual assets above are available as they are published.</p>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="sect-epk-contact">
+    <div class="container">
+      <h2>Press / Booking / Contact</h2>
+      {{ if .Params.contact_email }}
+      <p><a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a></p>
+      {{ else }}
+      <p>For press, booking and interview requests, get in touch via <a href="/contacto/">Sibelclan's contact form</a>.</p>
+      {{ end }}
+      <ul class="list-inline epk-social">
+        {{ range .Site.Data.social }}
+        <li class="list-inline-item">
+          <a target="_blank" rel="noopener" href="{{ .url }}">
+            <img class="social-icon" src="/assets/img/social/{{ .icon }}.svg" alt="{{ .icon }}" />
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+</div>
+{{ end }}
