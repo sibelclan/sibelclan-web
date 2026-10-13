@@ -10,6 +10,6 @@ Sibelclan es una banda granadina de rock alternativo con influencias Stoner y Gr
 
 Su presencia y sonido en directo es el plato fuerte de este cuarteto granadino destinado a ser el grupo de culto dentro de la escena del rock. Tras un primer álbum debut llamado “Half Marathon“, grabado sin discográfica en Villalobos Estudio, Sibelclan está en boga entre los melómanos de rock granadino más acérrimos y su edición limitada de Half Marathon “comienza a ser objeto de culto ya que tan solo se hiciero 500 unidades.
 
-La banda cuenta con tres vídeos-singles y sus álbumes a disposición en Spotify y demás plataformas digitales. En marzo de 2022 Sibelclan es seleccionada entre más de cien bandas nacionales y tras varias eliminatorias gana el concurso de bandas Rock in Rio Tea celebrado en Ponteaéreas (Pontevedra) .
+La banda cuenta con tres vídeos-singles y sus álbumes a disposición en Spotify y demás plataformas digitales. En marzo de 2022 Sibelclan es seleccionada entre más de cien bandas nacionales y tras varias eliminatorias gana el concurso de bandas Rock in Rio Tea celebrado en Ponteareas (Pontevedra).
 
 A finales de 2022 lanzan su segundo álbum EP “Full Marathon” así como el videoclip del single “Run to me”.
