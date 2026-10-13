@@ -1,0 +1,91 @@
+# Navigation
+navhome:
+  other: Home
+navconcerts:
+  other: Concerts
+navalbums:
+  other: Albums
+navabout:
+  other: About
+navcontact:
+  other: Contact
+navvideos:
+  other: Videos
+navgallery:
+  other: Gallery
+navstore:
+  other: Store
+
+# Contact form
+fieldname:
+  other: First name
+fieldsurname:
+  other: Last name
+fieldphone:
+  other: Phone
+fieldmessage:
+  other: Leave us a message
+btnsend:
+  other: Send
+contactheading:
+  other: Send us a message and we'll get back to you as soon as possible.
+
+# Footer
+linklegal:
+  other: Legal notice
+linkcookiepolicy:
+  other: Cookie policy
+linkprivacypolicy:
+  other: Privacy policy
+
+# Home
+hometagline:
+  other: Official website
+newsingle:
+  other: New single · Music video out now · Streaming since October 2
+watchvideo:
+  other: Watch the video
+presave:
+  other: Pre-save
+lastalbum:
+  other: Listen to our latest album
+newalbum:
+  other: New album | Out on
+readreview:
+  other: Read the full review at MetalHammer (in Spanish)
+listen:
+  other: Listen
+
+# Pages
+aboutheading:
+  other: About Sibelclan
+membersheading:
+  other: "Sibelclan are:"
+albumsheading:
+  other: Listen to our music
+albumssubheading:
+  other: Just hit play and feel the flow
+videosheading:
+  other: Watch our music videos and live shows
+albumtype:
+  other: Studio album / Released on
+buylisten:
+  other: Buy / Listen
+aboutalbum:
+  other: About
+
+# Concerts and social
+upcomingconcerts:
+  other: Upcoming concerts
+concertsfollowheader:
+  other: Get updates on new shows, new music and more
+concertsfollowcta:
+  other: Follow us
+concertsplayheader:
+  other: Don't see a show near you?
+concertsplaycta:
+  other: Request a show
+concertstickets:
+  other: TICKETS
+followus:
+  other: Follow us on social media

@@ -5,8 +5,12 @@ languageCode: es-es
 defaultContentLanguage: es
 languages:
   es:
+    languageName: Español
+    languageCode: es-es
     weight: 1
   en:
+    languageName: English
+    languageCode: en-us
     weight: 2
 metaDataFormat: yaml
 params:

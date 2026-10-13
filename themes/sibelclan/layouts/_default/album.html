@@ -7,10 +7,10 @@
       </div>
       <div class="col-sm-6">
         <h1>{{ .Title }}</h1>
-        <h2>Album de estudio / Publicado el {{ dateFormat "2 January 2006" .Date }}</h2>
+        <h2>{{ i18n "albumtype" }} {{ dateFormat "2 January 2006" .Date }}</h2>
         <p>{{ .Params.headline }}</p>
         <p>
-          <a href="{{ .Params.purchase_url }}" class="button button-center">Comprar / Escuchar</a>
+          <a href="{{ .Params.purchase_url }}" class="button button-center">{{ i18n "buylisten" }}</a>
         </p>
       </div>
     </div>
@@ -45,7 +45,7 @@
 
 <section id="sect-about">
   <div class="container">
-    <h1>Acerca de "{{ .Title }}"</h1>
+    <h1>{{ i18n "aboutalbum" }} "{{ .Title }}"</h1>
     <div class="row">
       <div class="col-12">
         <article>{{ .Content }}</article>

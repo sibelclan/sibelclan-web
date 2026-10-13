@@ -1,50 +1,91 @@
-clientsheader:
-  other: Hemos formado a los desarrolladores de estas empresas
-partnersheader:
-  other: Colaboramos con estas empresas para proporcionar nuestros servicios de consultoría y formación
+# Navegación
+navhome:
+  other: Home
+navconcerts:
+  other: Conciertos
+navalbums:
+  other: Albums
+navabout:
+  other: Sobre nosotros
+navcontact:
+  other: Contacto
+navvideos:
+  other: Videos
+navgallery:
+  other: Galería
+navstore:
+  other: Tienda
+
+# Formulario de contacto
 fieldname:
   other: Nombre
 fieldsurname:
   other: Apellidos
 fieldphone:
   other: Teléfono
-fieldcompany:
-  other: Compañía
-fieldcontactmsg:
-  other: Cuéntanos acerca de los retos de tu equipo
-checkcomms:
-  other: Acepto recibir comunicaciones comerciales u ofertas por parte de Sibelclan.
+fieldmessage:
+  other: Déjanos tu mensaje
 btnsend:
   other: Enviar
+contactheading:
+  other: Envíanos un mensaje y te responderemos lo antes posible.
+
+# Pie
 linklegal:
   other: Aviso legal
-linkteam:
-  other: Equipo
-linkjobs:
-  other: Empleo
 linkcookiepolicy:
   other: Política de cookies
 linkprivacypolicy:
   other: Política de privacidad
-navservices:
-  other: Servicios
-navcoaching:
-  other: Coaching técnico
-navopentraining:
-  other: Cursos abiertos
-navresources:
-  other: Recursos
-navb2b:
-  other: Empresas
-navmailinglist:
-  other: Newsletter
-navchecklist:
-  other: Checklist equipos de alto rendimiento
-navdevguide2024:
-  other: Guía para developers 2024
-navcontact:
-  other: Contáctanos
-navkatas:
-  other: Katas de programación
-navstartlearning:
-  other: Comienza a aprender
+
+# Home
+hometagline:
+  other: Sitio web oficial
+newsingle:
+  other: Nuevo single · Videoclip ya disponible · En streaming el 2 de octubre
+watchvideo:
+  other: Ver videoclip
+presave:
+  other: Presave
+lastalbum:
+  other: Escucha nuestro último disco
+newalbum:
+  other: Nuevo album | Disponible el
+readreview:
+  other: Leer review completa en MetalHammer
+listen:
+  other: Escuchar
+
+# Páginas
+aboutheading:
+  other: Sobre Sibelclan
+membersheading:
+  other: "Sibelclan son:"
+albumsheading:
+  other: Escucha nuestra música
+albumssubheading:
+  other: Solo haz click y siente el flow
+videosheading:
+  other: Mira nuestros videoclips y conciertos
+albumtype:
+  other: Album de estudio / Publicado el
+buylisten:
+  other: Comprar / Escuchar
+aboutalbum:
+  other: Acerca de
+
+# Conciertos y redes
+upcomingconcerts:
+  other: Próximos conciertos
+concertsfollowheader:
+  other: Recibe actualizaciones de nuevos conciertos, nueva música y más
+concertsfollowcta:
+  other: Síguenos
+concertsplayheader:
+  other: ¿No ves un concierto cerca de ti?
+concertsplaycta:
+  other: Pide un concierto
+concertstickets:
+  other: ENTRADAS
+followus:
+  other: Síguenos en redes

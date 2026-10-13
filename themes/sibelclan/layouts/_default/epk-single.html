@@ -178,7 +178,7 @@
     <div class="container">
       <h2>About Sibelclan</h2>
       {{ range split .Params.band_bio_short "\n\n" }}<p>{{ . }}</p>{{ end }}
-      <p><a href="/sobre-nosotros/">Full band bio →</a></p>
+      <p><a href="/en/about/">Full band bio →</a></p>
     </div>
   </section>
 
@@ -213,7 +213,7 @@
       {{ if .Params.contact_email }}
       <p><a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a></p>
       {{ else }}
-      <p>For press, booking and interview requests, get in touch via <a href="/contacto/">Sibelclan's contact form</a>.</p>
+      <p>For press, booking and interview requests, get in touch via <a href="/en/contact/">Sibelclan's contact form</a>.</p>
       {{ end }}
       <ul class="list-inline epk-social">
         {{ range .Site.Data.social }}

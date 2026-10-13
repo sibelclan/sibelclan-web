@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1>Próximos conciertos</h1>
+        <h1>{{ i18n "upcomingconcerts" }}</h1>
         <div class="bandsintown-widget">
           <script
             charset="utf-8"
@@ -37,7 +37,7 @@
             data-date-border-radius="10px"
             data-event-ticket-cta-size="medium"
             data-event-custom-ticket-text=""
-            data-event-ticket-text="ENTRADAS"
+            data-event-ticket-text="{{ i18n "concertstickets" }}"
             data-event-ticket-icon="false"
             data-event-ticket-cta-text-color="rgba(255,255,255,1)"
             data-event-ticket-cta-bg-color="rgba(74,74,74,1)"
@@ -60,9 +60,9 @@
             data-event-rsvp-cta-border-radius="2px"
             data-follow-section-position="top"
             data-follow-section-alignment="center"
-            data-follow-section-header-text="Recibe actualizaciones de nuevos conciertos, nueva música y más"
+            data-follow-section-header-text="{{ i18n "concertsfollowheader" }}"
             data-follow-section-cta-size="medium"
-            data-follow-section-cta-text="Síguenos"
+            data-follow-section-cta-text="{{ i18n "concertsfollowcta" }}"
             data-follow-section-cta-icon="false"
             data-follow-section-cta-text-color="rgba(255,255,255,1)"
             data-follow-section-cta-bg-color="rgba(74,74,74,1)"
@@ -71,9 +71,9 @@
             data-follow-section-cta-border-radius="2px"
             data-play-my-city-position="bottom"
             data-play-my-city-alignment="center"
-            data-play-my-city-header-text="¿No ves un concierto cerca de ti?"
+            data-play-my-city-header-text="{{ i18n "concertsplayheader" }}"
             data-play-my-city-cta-size="medium"
-            data-play-my-city-cta-text="Pide un concierto"
+            data-play-my-city-cta-text="{{ i18n "concertsplaycta" }}"
             data-play-my-city-cta-icon="false"
             data-play-my-city-cta-text-color="rgba(255,255,255,1)"
             data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
@@ -88,7 +88,7 @@
             data-optin-cta-border-width=""
             data-optin-cta-border-radius=""
             data-optin-cta-border-color=""
-            data-language="es"
+            data-language="{{ .Language.Lang }}"
             data-layout-breakpoint="900"
             data-app-id=""
             data-affil-code=""

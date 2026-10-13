@@ -1,0 +1,24 @@
+---
+title: "Addicted"
+description: ""
+date: 2024-12-06T00:00:00+01:00
+layout: album
+cover_art: '/assets/img/coverart/addicted.jpg'
+images: ['/assets/img/band/2024-upside-down-world.jpg']
+purchase_url: https://open.spotify.com/intl-es/album/1hVKPuOSfeg30FiT687eUd?si=DOKblaBnQzGd6fHE27jNrg
+streaming_urls:
+  spotify: https://open.spotify.com/embed/album/1hVKPuOSfeg30FiT687eUd?utm_source=generator
+  apple_music: https://embed.music.apple.com/es/album/addicted/1776840621
+headline: "Con un lienzo metalizado como base, rallan en el con un destornillador marca Dalí desde la inicial y stoner “Upside Down World” (crítica social incluida en sus letras) o la Sabbath alternativa de “Luckiest Man On Earth”, hasta el hard rock de sintetizadores siderales o de alternancia plomiza a la Muse de “My Costellation” y “Adictted”, pasando por el gótico ligero de “No Turning Back”, el reflujo Queen tamizado por halos grunge de “The Crowd”, el surf rock sicótico de “Wrong”"
+---
+
+*Press quotes are reproduced in their original Spanish.*
+
+> "Con un lienzo metalizado como base, rallan en el con un destornillador marca Dalí desde la inicial y stoner “Upside Down World” (crítica social incluida en sus letras) o la Sabbath alternativa de “Luckiest Man On Earth”, hasta el hard rock de sintetizadores siderales o de alternancia plomiza a la Muse de “My Costellation” y “Addicted”, pasando por el gótico ligero de “No Turning Back”, el reflujo Queen tamizado por halos grunge de “The Crowd”, el surf rock sicótico de “Wrong”
+[Read the full review at MetalHammer (in Spanish)](https://metalhammer.es/sibelclan-addicted/)
+
+> "“Addicted” se perfila como una de las grandes sorpresas musicales del año. Con su mezcla de riffs poderosos, letras profundas y una producción cuidada al detalle, el disco está diseñado para cautivar tanto a los amantes del rock clásico como a quienes buscan sonidos nuevos. Sibelclan no solo entrega música; entrega experiencias, emociones y un viaje sonoro que conecta con el público a niveles profundos."
+[Read the full review at El Mundo de Tulsa (in Spanish)](https://elmundodetulsa.com/sibelclan-addicted-disco-descargar-resena/)
+
+> "No os ha pasado alguna vez que vais en el bus sentados junto a alguien que no conocéis y que acaba siendo un colega imprescindible desde que iniciáis una charla? Pues eso es lo que te puede pasar con SIBELCLAN, que es un grupo que te suena a través de otra banda que precisamente la conociste de casualidad y ahora se ha convertido en tu banda sonora diaria. No hay día que no resuene en mis oídos alguna canción de riffs potentes como las que ellos hacen."
+[Read the full review at Rockemotion (in Spanish)](https://www.rockemotion.com/rewiew/sibelclan-addicted-diciembre-2024)

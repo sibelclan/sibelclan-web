@@ -14,7 +14,7 @@
       <div class="row align-items-center">
         <div class="col-12 text-center">
           <h1 class="super-big">Sibelclan</h1>
-          <h2>Sitio web oficial</h2>
+          <h2>{{ i18n "hometagline" }}</h2>
         </div>
       </div>
     </div>
@@ -32,10 +32,10 @@
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
           <h1 class="super-big">The Siren Song</h1>
-          <h2>Nuevo single · Videoclip ya disponible · En streaming el 2 de octubre</h2>
+          <h2>{{ i18n "newsingle" }}</h2>
           <div class="button-group">
-            <a href="https://www.youtube.com/watch?v=u9zk2IwX1Gg" class="button" target="_blank">Ver videoclip</a>
-            <a href="https://ffm.to/sibelclan-the-siren-song" class="button button-spotify" target="_blank">Presave</a>
+            <a href="https://www.youtube.com/watch?v=u9zk2IwX1Gg" class="button" target="_blank">{{ i18n "watchvideo" }}</a>
+            <a href="https://ffm.to/sibelclan-the-siren-song" class="button button-spotify" target="_blank">{{ i18n "presave" }}</a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2>Escucha nuestro último disco</h2>
+        <h2>{{ i18n "lastalbum" }}</h2>
       </div>
     </div>
 
@@ -56,12 +56,12 @@
       <div class="col-lg-6">
         <img src="{{ .Params.cover_art }}" alt="{{ .Title }}" class="img-fluid" />
         <h3>{{ .Title }}</h3>
-        <h4>Nuevo album | Disponible el {{ dateFormat "2 January 2006" .Date }}</h4>
+        <h4>{{ i18n "newalbum" }} {{ dateFormat "2 January 2006" .Date }}</h4>
         <p class="review">"{{ .Params.headline }}"</p>
         <p>
-          <a href="https://metalhammer.es/sibelclan-addicted/" target="_blank">Leer review completa en MetalHammer</a>
+          <a href="https://metalhammer.es/sibelclan-addicted/" target="_blank">{{ i18n "readreview" }}</a>
         <p>
-          <a href="{{ .Params.purchase_url }}" class="button button-black button-center">Escuchar</a>
+          <a href="{{ .Params.purchase_url }}" class="button button-black button-center">{{ i18n "listen" }}</a>
         </p>
       </div>
       <div class="col-lg-6">

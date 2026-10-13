@@ -1,31 +1,24 @@
+{{- $links := slice
+  (dict "path" "/" "key" "navhome")
+  (dict "path" "/conciertos" "key" "navconcerts")
+  (dict "path" "/albums" "key" "navalbums")
+  (dict "path" "/sobre-nosotros" "key" "navabout")
+  (dict "path" "/contacto" "key" "navcontact")
+  (dict "path" "/videos" "key" "navvideos")
+  (dict "path" "/galeria" "key" "navgallery") -}}
+{{- range $links }}
+{{- $page := site.GetPage .path }}
 <li class="nav-item">
-  <a class="nav-link" href="/">Home</a>
+  <a class="nav-link" href="{{ if $page }}{{ $page.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}">{{ i18n .key }}</a>
 </li>
+{{- end }}
 
 <li class="nav-item">
-  <a class="nav-link" href="/conciertos/">Conciertos</a>
+  <a class="nav-link" href="{{ .Site.Params.external_links.store_url }}">{{ i18n "navstore" }}</a>
 </li>
 
+{{- range .Translations }}
 <li class="nav-item">
-  <a class="nav-link" href="/albums/">Albums</a>
+  <a class="nav-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.LanguageName }}</a>
 </li>
-
-<li class="nav-item">
-  <a class="nav-link" href="/sobre-nosotros/">Sobre nosotros</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="/contacto/">Contacto</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="/videos/">Videos</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="/galeria/">Galería</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="{{ .Site.Params.external_links.store_url }}">Tienda</a>
-</li>
+{{- end }}
