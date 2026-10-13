@@ -5,12 +5,33 @@ layout: "single"
 
 # Aviso legal
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur dolor at vulputate gravida. Maecenas id ultricies mi. Nam quis tincidunt lorem, sit amet euismod justo. Praesent nec bibendum tortor, vitae porta mi. Donec semper blandit lectus, non scelerisque lacus sodales ut. Fusce eu interdum mauris. Curabitur pellentesque tellus quis fermentum lobortis.
+## Titular del sitio web
 
-Nullam volutpat accumsan lorem eu auctor. Etiam vitae felis lacinia, ultrices arcu vel, scelerisque turpis. Sed ut egestas ligula. Duis nec eros urna. Pellentesque ut mi tristique, feugiat est vitae, aliquam arcu. Proin ornare dignissim facilisis. In et mauris urna. Nunc rhoncus vulputate facilisis.
+- **Nombre:** Pedro Pardal Jimena
+- **NIF:** 53741781G
+- **Domicilio:** Calle Trinidad 2, 1ºC, 18001 Granada (España)
+- **Email:** sibelclan@gmail.com
+- **Actividad:** profesional autónomo, alta en el IAE, epígrafe 032 (intérpretes de instrumentos musicales)
+- **Nombre comercial del sitio:** Sibelclan (sibelclan.com)
 
-Duis vitae tellus sodales, bibendum est non, venenatis elit. Phasellus magna libero, rutrum sit amet quam eget, sodales finibus felis. Quisque non vulputate lectus. Sed vitae purus nec sem viverra finibus. Sed vitae lorem in sem viverra blandit. Ut hendrerit augue nulla, et faucibus massa vehicula sollicitudin. Sed erat justo, consectetur ut metus pharetra, cursus accumsan leo. Integer elementum lorem ac sem vehicula fringilla. Nullam eu sem massa. Morbi ornare risus at posuere egestas. Nullam fermentum mi erat, vitae dapibus arcu condimentum sit amet. Curabitur sollicitudin in neque vitae lobortis. Duis pharetra porta erat, id auctor dui fermentum quis.
+Sibelclan es una banda de rock alternativo de Granada sin personalidad jurídica propia. La actividad de la banda y de este sitio web se realiza a través del titular indicado.
 
-Etiam euismod sapien nec turpis euismod eleifend. Integer euismod tortor quis leo feugiat, ac placerat augue convallis. Praesent volutpat mattis eros, sed pulvinar ligula bibendum eu. Aliquam dictum ante in mauris venenatis, in ullamcorper arcu pellentesque. Quisque lacinia feugiat pulvinar. Sed suscipit dui justo, cursus semper erat consequat sit amet. Vivamus tortor purus, sagittis ut aliquet nec, elementum ut est. Sed quam arcu, tincidunt sed tellus a, pulvinar fermentum dolor. Cras in sem eget augue vulputate bibendum. Morbi tincidunt consectetur lectus a venenatis. Suspendisse id convallis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+## Objeto
 
-Morbi commodo lobortis nisl at blandit. Donec dictum quam lorem, quis consequat mi dictum nec. In mi odio, dapibus ac neque in, imperdiet egestas leo. In pharetra, diam sit amet congue accumsan, ipsum lectus auctor ipsum, iaculis cursus mi tellus ac erat. Donec a mauris posuere, sodales libero sed, dictum risus. Pellentesque non neque non nibh porta porttitor. Integer ipsum neque, feugiat sed sem in, egestas pretium leo. Donec auctor nec metus ac tristique. Pellentesque viverra turpis quis mi consectetur dictum. Etiam condimentum odio et massa efficitur interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent dignissim elementum arcu, eu hendrerit urna. Aenean hendrerit elementum orci, non vestibulum risus laoreet id.
+Este sitio da a conocer la música, los conciertos y el material de la banda y ofrece un formulario de contacto. El acceso es gratuito. La tienda de merchandising (Shopify) se rige por sus propias condiciones.
+
+## Propiedad intelectual e industrial
+
+Las canciones, letras, grabaciones, fotografías, vídeos, diseños y el nombre y logotipo de Sibelclan son de la banda o de sus autores y están protegidos por la normativa de propiedad intelectual. Queda prohibida su reproducción, distribución o comunicación pública sin autorización por escrito, salvo para citar o reseñar la banda con fines informativos indicando la fuente. El material del EPK puede usarse para cubrir la banda en prensa.
+
+## Enlaces y contenidos de terceros
+
+El sitio enlaza o incrusta contenido de terceros (Spotify, YouTube, Bandsintown, redes sociales). El titular no controla esos servicios ni responde de sus contenidos o políticas.
+
+## Responsabilidad
+
+El titular procura que la información sea exacta y actual, pero no garantiza la ausencia de errores ni la disponibilidad continua del sitio.
+
+## Legislación y jurisdicción
+
+Se aplica la legislación española. Para cualquier conflicto, y si la ley no impone otro fuero (por ejemplo, el del consumidor), serán competentes los juzgados y tribunales de Granada.
