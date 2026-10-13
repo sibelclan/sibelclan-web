@@ -6,13 +6,15 @@ navconcerts:
 navalbums:
   other: Albums
 navabout:
-  other: Sobre nosotros
+  other: Biografía
 navcontact:
   other: Contacto
 navvideos:
   other: Videos
 navgallery:
   other: Galería
+navmedia:
+  other: Media
 navstore:
   other: Tienda
 

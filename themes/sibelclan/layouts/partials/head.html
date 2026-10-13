@@ -1,6 +1,8 @@
 {{- partial "gtm_head.html" . -}}
 
 <meta charset="utf-8">
+<meta name="theme-color" content="#07070b">
+<script>document.documentElement.className += " js";</script>
 <title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
 <!-- Meta -->

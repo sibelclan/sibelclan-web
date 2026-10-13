@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 text-lg-left">
         <a href="{{ "/" | relLangURL }}"
-          ><img src="/assets/img/logo/sibelclan-logo.png" height="48px" alt="Sibelclan"
+          ><img src="/assets/img/logo/sibelclan-logo.png" height="44" alt="Sibelclan"
         /></a>
         <p>
           <a href="{{ "/legal/legal-notice/" | relLangURL }}">{{ i18n "linklegal" }}</a> |
@@ -12,6 +12,14 @@
         </p>
         {{- block "footer-links" . }}{{- end }}
       </div>
+      <div class="col-lg-6">
+        <ul class="footer-social">
+          {{ range .Site.Data.social }}
+          <li><a target="_blank" rel="noopener" href="{{ .url }}"><img class="social-icon" src="/assets/img/social/{{ .icon }}.svg" alt="{{ .icon }}" /></a></li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
+    <p class="footer-copy">&copy; {{ now.Year }} Sibelclan</p>
   </div>
 </footer>

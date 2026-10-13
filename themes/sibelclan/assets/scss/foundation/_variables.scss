@@ -1,11 +1,19 @@
-$primary-color: #ffffff;
+// Paleta: negro de escenario + rojo de focos + ámbar (portada The Siren Song)
+$primary-color: #ff2e4d;
 $secondary-color: #ffffff;
-$dark-background-color: #000000;
-$gray-background-color: #f1f1f1;
-$gloaming-background-color: #f1fff9;
+$accent-color: #ffb020;
+$dark-background-color: #07070b;
+$panel-color: #12121a;
+$panel-raised-color: #1a1a24;
+$gray-background-color: #0e0e14;
+$gloaming-background-color: #0e0e14;
+$line-color: rgba(255, 255, 255, 0.1);
 $mid-gray: #8d9199;
 $light-gray: #d1d3d6;
+$text-color: #e8e8ee;
+$brand-gradient: linear-gradient(100deg, #ff2e4d 0%, #ff7a2e 55%, #ffb020 100%);
 $h1-font: "Kanit";
 $h2-font: "Kanit";
 $p-font: "Kanit";
-$base-font-size: 13pt
+$base-font-size: 13pt;
+$nav-height: 76px;

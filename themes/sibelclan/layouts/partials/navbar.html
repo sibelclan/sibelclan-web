@@ -1,15 +1,30 @@
-{{- $links := slice
-  (dict "path" "/" "key" "navhome")
+{{- $page := . -}}
+{{- range slice
   (dict "path" "/conciertos" "key" "navconcerts")
   (dict "path" "/albums" "key" "navalbums")
-  (dict "path" "/sobre-nosotros" "key" "navabout")
-  (dict "path" "/contacto" "key" "navcontact")
-  (dict "path" "/videos" "key" "navvideos")
-  (dict "path" "/galeria" "key" "navgallery") -}}
-{{- range $links }}
-{{- $page := site.GetPage .path }}
+  (dict "path" "/sobre-nosotros" "key" "navabout") }}
+{{- $target := site.GetPage .path }}
 <li class="nav-item">
-  <a class="nav-link" href="{{ if $page }}{{ $page.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}">{{ i18n .key }}</a>
+  <a class="nav-link{{ if and $target (eq $page.RelPermalink $target.RelPermalink) }} active{{ end }}" href="{{ if $target }}{{ $target.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}">{{ i18n .key }}</a>
+</li>
+{{- end }}
+
+{{- $media := slice (dict "path" "/videos" "key" "navvideos") (dict "path" "/galeria" "key" "navgallery") }}
+{{- $mediaActive := false }}
+{{- range $media }}{{ with site.GetPage .path }}{{ if eq $page.RelPermalink .RelPermalink }}{{ $mediaActive = true }}{{ end }}{{ end }}{{ end }}
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle{{ if $mediaActive }} active{{ end }}" href="#" id="navMediaMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ i18n "navmedia" }}</a>
+  <div class="dropdown-menu" aria-labelledby="navMediaMenu">
+    {{- range $media }}
+    {{- $target := site.GetPage .path }}
+    <a class="dropdown-item{{ if and $target (eq $page.RelPermalink $target.RelPermalink) }} active{{ end }}" href="{{ if $target }}{{ $target.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}">{{ i18n .key }}</a>
+    {{- end }}
+  </div>
+</li>
+
+{{- with site.GetPage "/contacto" }}
+<li class="nav-item">
+  <a class="nav-link{{ if eq $page.RelPermalink .RelPermalink }} active{{ end }}" href="{{ .RelPermalink }}">{{ i18n "navcontact" }}</a>
 </li>
 {{- end }}
 
