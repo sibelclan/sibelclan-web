@@ -1,7 +1,7 @@
 ---
 title: "The Siren Song — Electronic Press Kit"
 seo_title: "Sibelclan — The Siren Song | Electronic Press Kit"
-description: "Electronic Press Kit for “The Siren Song”, the new single by Sibelclan (Granada, Spain). Groove-driven alternative rock produced by Luis Loyo, out soon. Pre-save, official video, press assets and contact for press, radio and booking."
+description: "Electronic Press Kit for “The Siren Song”, the new single by Sibelclan (Granada, Spain). Groove-driven alternative rock produced by Luis Loyo, out now. Pre-save, official video, press assets and contact for press, radio and booking."
 date: 2026-09-27T00:00:00+01:00
 layout: epk-single
 hidden: false
@@ -32,12 +32,10 @@ images: ["/assets/img/coverart/the-siren-song.jpg"]
 
 streaming:
   # Spotify track ID only (not the full URL), e.g. 47lCgT8SlZv8NXqDY56M4L
-  # Not set yet: the release isn't live on Spotify (album URI spotify:album:57taZJbphL0iPn6Utk3jzP exists
-  # but is pre-release). Fill in the track ID the day it goes live.
-  spotify_track_id: ""
+  spotify_track_id: "0kCOtluPwFox5ZWVU8RrXy"
   apple_music_url: ""
   youtube_music_url: ""
-  # Pre-save link, live now, used as the primary CTA until spotify_track_id is set.
+  # Pre-save link, only used as the primary CTA while spotify_track_id is empty.
   presave_url: "https://ffm.to/sibelclan-the-siren-song"
 
 video:
@@ -98,5 +96,5 @@ press_assets:
 press_kit_zip: ""
 
 # Direct press/booking email, e.g. booking@sibelclan.com
-contact_email: ""
+contact_email: "sibelclan@gmail.com"
 ---
