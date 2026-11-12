@@ -11,6 +11,7 @@
     <meta property="og:description" content="">
     <meta name="description" content="">
     <title>Sibelclan - {{ .Params.song_name }}</title>
+    {{ if or .IsPage .IsHome }}<link rel="canonical" href="{{ .Permalink }}">{{ end }}
     <style>
         html {
             height: 100%;

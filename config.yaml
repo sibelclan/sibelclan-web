@@ -1,6 +1,7 @@
 title: Sibelclan
 theme: sibelclan
 baseURL: https://www.sibelclan.com
+enableRobotsTXT: true
 languageCode: es-es
 defaultContentLanguage: es
 languages:
